@@ -24,4 +24,14 @@ pragma solidity >=0.6.0;
         *Emits a {Transfer} event.
         */
         function transfer(address recipient, uint256 amount) external returns (bool);   
+        /**
+        *@dev Emitted when 'value' tokens are moved from one account ('from') to another ('to').
+        *
+        * Note that 'value' may be zero.
+        */
+        event Transfer(address indexed from, address indexed to, uint256 value);
+        /**
+        @dev Emitted when the allowance of a 'spender for an 'ownder' is set by a call to {approve}. 'value is the new allowance.
+         */
+        event Approval(address indexed owner, address indexed spender, uint256 value);
  }
